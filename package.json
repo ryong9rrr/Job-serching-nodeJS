@@ -5,5 +5,15 @@
   "main": "index.js",
   "repository": "https://github.com/ryong9rrr/Job-serching-nodeJS.git",
   "author": "ryong9rrr",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  }
 }
