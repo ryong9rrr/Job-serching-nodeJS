@@ -1,0 +1,9 @@
+{
+  "name": "Job-Data_nodeJS",
+  "version": "1.0.0",
+  "description": "serching job data with nodeJS",
+  "main": "index.js",
+  "repository": "https://github.com/ryong9rrr/Job-serching-nodeJS.git",
+  "author": "ryong9rrr",
+  "license": "MIT"
+}
