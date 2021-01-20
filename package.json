@@ -11,7 +11,9 @@
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "express": "^4.17.1"
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "graphql-yoga": "^1.18.3"
   },
   "scripts": {
     "start": "nodemon --exec babel-node app.js"
