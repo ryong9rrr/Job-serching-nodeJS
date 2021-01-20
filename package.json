@@ -2,7 +2,7 @@
   "name": "Job-Data_nodeJS",
   "version": "1.0.0",
   "description": "serching job data with nodeJS",
-  "main": "index.js",
+  "main": "app.js",
   "repository": "https://github.com/ryong9rrr/Job-serching-nodeJS.git",
   "author": "ryong9rrr",
   "license": "MIT",
@@ -14,6 +14,6 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "nodemon --exec babel-node app.js"
   }
 }
