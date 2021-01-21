@@ -3,6 +3,7 @@
 DailyMission #4 REST_API with nodeJS
 
 - python으로 웹스크래핑 (https://github.com/ryong9rrr/Job-Searching) 의 nodeJS version
+- axios, cheerio로 스크래핑
 
 <h2>LINK</h2>
 
