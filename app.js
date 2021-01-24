@@ -1,12 +1,10 @@
-import express from "express";
-import kakao from "./kakao";
+import { GraphQLServer } from "graphql-yoga";
+import resolvers from "./graphql/resolvers";
+//import kakao from "./kakao";
 
-const server = express();
-
-server.get("/api/kakao", (req, res) => {
-  res.json(kakao);
+const server = new GraphQLServer({
+  typeDefs: "graphql/schema.graphql",
+  resolvers,
 });
 
-server.listen(3000, () => {
-  console.log("The server is running");
-});
+server.start(() => console.log("server is running"));
