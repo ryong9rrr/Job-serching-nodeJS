@@ -7,9 +7,18 @@ const getHtml = async () => {
   return response;
 };
 
-getHtml().then((html) => {
-  const $ = cheerio.load(html.data);
-  const $getPages = $("span.inner_pages").children("a.link_page");
+getHtml()
+  .then((html) => {
+    const $ = cheerio.load(html.data);
+    const $getPages = $("span.inner_pages").children("a.link_page");
+    const pages = $getPages.length + 1;
+    return pages;
+  })
+  .then((pages) => getJobs(pages));
 
-  console.log($getPages.text());
-});
+const getJobs = (pages) => {
+  for (var i = 1; i <= pages; i++) {
+    const response = axios.get(`${kakao_URL}page=${i}`);
+    return response;
+  }
+};
