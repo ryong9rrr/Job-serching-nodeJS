@@ -34,6 +34,7 @@ getJobs().then((page) => {
     jobList[i] = {
       id: i,
       title: $(this).find("h4.tit_jobs").text(),
+      href: $(this).find("a").attr("href"),
     };
   });
   console.log(jobList);
